@@ -1,4 +1,5 @@
 # PokeApp
+<img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/e57148bb-686e-4603-9eca-2bd5b125e2bc" />
 
 Una Single Page Application (SPA) para explorar el mundo Pokemon, construida con React 19 y consumiendo la [PokeAPI v2](https://pokeapi.co/api/v2).
 

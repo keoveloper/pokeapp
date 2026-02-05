@@ -1,0 +1,51 @@
+export const styles = {
+  container: "container mx-auto max-w-2xl px-4 py-8",
+  backButton:
+    "mb-6 inline-flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 rounded",
+  card: "rounded-xl bg-white p-6 shadow-lg",
+  header: "flex flex-col items-center sm:flex-row sm:items-start sm:gap-6",
+  image: "h-48 w-48 object-contain",
+  imagePlaceholder:
+    "flex h-48 w-48 items-center justify-center rounded bg-gray-100 text-sm text-gray-400",
+  info: "mt-4 flex-1 text-center sm:mt-0 sm:text-left",
+  id: "text-sm text-gray-400",
+  name: "text-2xl font-bold capitalize text-gray-800",
+  favoriteButton:
+    "mt-2 inline-flex items-center gap-1 rounded-full px-4 py-1.5 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2",
+  favoriteActive: "bg-red-100 text-red-600 hover:bg-red-200",
+  favoriteInactive: "bg-gray-100 text-gray-600 hover:bg-gray-200",
+  typeBadges: "mt-3 flex flex-wrap justify-center gap-2 sm:justify-start",
+  typeBadge: "rounded-full px-3 py-1 text-xs font-medium text-white",
+  meta: "mt-4 flex justify-center gap-6 text-sm text-gray-600 sm:justify-start",
+  section: "mt-6",
+  sectionTitle: "mb-3 text-lg font-semibold text-gray-700",
+  statRow: "flex items-center gap-3 py-1",
+  statName: "w-28 text-right text-sm capitalize text-gray-500",
+  statBarOuter: "flex-1 overflow-hidden rounded-full bg-gray-200",
+  statBarInner: "h-2 rounded-full bg-red-500 transition-all",
+  statValue: "w-8 text-right text-sm font-medium text-gray-700",
+  abilitiesList: "flex flex-wrap gap-2",
+  abilityBadge:
+    "rounded-full bg-gray-100 px-3 py-1 text-sm capitalize text-gray-700",
+} as const;
+
+export const typeColors: Record<string, string> = {
+  normal: "bg-gray-400",
+  fire: "bg-orange-500",
+  water: "bg-blue-500",
+  electric: "bg-yellow-400",
+  grass: "bg-green-500",
+  ice: "bg-cyan-300",
+  fighting: "bg-red-700",
+  poison: "bg-purple-500",
+  ground: "bg-amber-600",
+  flying: "bg-indigo-300",
+  psychic: "bg-pink-500",
+  bug: "bg-lime-500",
+  rock: "bg-yellow-700",
+  ghost: "bg-purple-700",
+  dragon: "bg-indigo-600",
+  dark: "bg-gray-700",
+  steel: "bg-gray-400",
+  fairy: "bg-pink-300",
+};

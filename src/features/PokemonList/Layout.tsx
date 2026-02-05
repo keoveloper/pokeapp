@@ -153,24 +153,20 @@ export function PokemonListLayout({
         </div>
       </div>
 
-      {isLoading && <LoadingSpinner message="Loading Pok\u00e9mon..." />}
+      {isLoading && <LoadingSpinner message="Loading Pokemon..." />}
 
-      {isError && (
-        <ErrorMessage message="Could not load Pok\u00e9mon." />
-      )}
+      {isError && <ErrorMessage message="Could not load Pokemon." />}
 
       {!isLoading && !isError && pokemons.length === 0 && (
         <EmptyState
-          title="No Pok\u00e9mon found"
+          title="No Pokemon found"
           description="Try a different search or filter."
         />
       )}
 
       {!isLoading && !isError && pokemons.length > 0 && (
         <>
-          {isDetailsLoading && (
-            <LoadingSpinner message="Loading details..." />
-          )}
+          {isDetailsLoading && <LoadingSpinner message="Loading details..." />}
 
           <div ref={containerRef}>
             {!isDetailsLoading && (

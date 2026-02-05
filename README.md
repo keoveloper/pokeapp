@@ -1,4 +1,5 @@
 # PokeApp
+
 <img width="1919" height="912" alt="image" src="https://github.com/user-attachments/assets/e57148bb-686e-4603-9eca-2bd5b125e2bc" />
 
 Una Single Page Application (SPA) para explorar el mundo Pokemon, construida con React 19 y consumiendo la [PokeAPI v2](https://pokeapi.co/api/v2).
@@ -18,6 +19,8 @@ Son cosas que no habia implementado y ahora ya se en donde mas implementarlo.
 ### Gestor de paquetes: pnpm
 
 Se eligio **pnpm** sobre npm o yarn por su manejo eficiente del disco duro (usa un store global con hard links en lugar de duplicar paquetes en cada proyecto) y por su velocidad de instalacion superior.
+
+se corre pnpm dev "vite --host" para que sea accesible desde otras maquinas en la red local como mi celular.
 
 ### Framework y lenguaje: React 19 + TypeScript
 

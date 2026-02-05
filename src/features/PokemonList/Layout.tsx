@@ -79,7 +79,10 @@ function useContainerColumns(ref: React.RefObject<HTMLDivElement | null>) {
     const el = ref.current;
     if (!el) return;
 
-    const update = () => setCols(calcColumns(el.clientWidth));
+    const update = () => {
+      const w = el.clientWidth;
+      if (w > 0) setCols(calcColumns(w));
+    };
 
     update();
     const observer = new ResizeObserver(update);

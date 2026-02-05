@@ -21,7 +21,7 @@ export function PokemonDetailLayout({
   toggleFavorite,
   goBack,
 }: PokemonDetailLayoutProps) {
-  if (isLoading) return <LoadingSpinner message="Loading Pok\u00e9mon..." />;
+  if (isLoading) return <LoadingSpinner message="Loading Pokemon..." />;
   if (isError || !pokemon)
     return (
       <ErrorMessage
